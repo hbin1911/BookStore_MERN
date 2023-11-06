@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
       res.status(500).send({ message: err.message });
     }
   });
-  // Route for getting one bok with id
+  // Route for getting one book with id
   router.get("/:id", async (req, res) => {
     try {
       const { id } = req.params;
