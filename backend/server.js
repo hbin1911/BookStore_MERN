@@ -11,9 +11,9 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: 'https://book-store-frontend-six.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['application/json']
+  credentials: true,
 }))
+
 app.use('/books', bookRoutes);
 
 
